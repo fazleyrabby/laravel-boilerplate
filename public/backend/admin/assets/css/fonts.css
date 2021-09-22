@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&family=Nunito:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+/* Fancy fonts  */
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url(../fonts/GTWalsheimProRegular.woff);
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url(../fonts/GTWalsheimProBold.woff);
+  font-weight: 700;
+  font-style: normal
+}
+

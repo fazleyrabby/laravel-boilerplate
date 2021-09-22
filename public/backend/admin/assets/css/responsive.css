@@ -1,0 +1,31 @@
+@media screen and (max-width: 780px) {
+  /* .navbar-toggler{
+        visibility: visible;
+    } */
+
+  .main-wrapper {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .dashboard-card {
+    min-width: 100%;
+  }
+
+  .main-wrapper
+  {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body,
+  main {
+    overflow-x: hidden !important;
+  }
+}
+
+/* .navbar-toggler {
+  visibility: visible;
+} */

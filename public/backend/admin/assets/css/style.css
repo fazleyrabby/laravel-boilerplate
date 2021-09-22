@@ -1,0 +1,235 @@
+@import url('fonts.css');          
+
+body{
+    min-height: 100vh;
+    background: #fafdfb;
+    margin-bottom: 50px;
+    font-family: 'Sofia Pro','Futura Std','GT Walsheim Pro', 'Fira Sans', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    height: -webkit-fill-available;
+    /* max-height: 100vh; */
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+}
+
+.sidebar{
+    /* width: 0; */
+    transform: translateX(-100%);
+    transition: all 300ms ease;
+    display: none;
+    /* opacity: 0; */
+    position: fixed;
+    height: 100%;
+    /* z-index: 1; */
+    overflow-y: scroll;
+}
+
+.sidebar.active{
+    /* left: 0; */
+    transform: translateX(0);
+    width: 280px;
+    z-index: 100;
+    /* opacity: 1; */
+}
+.nested{
+    padding: 0 3px;
+}
+.nested button{
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.nested button:hover{
+    color: inherit;
+}
+.nested button:hover,
+.nested button:active,
+.nested button:focus
+{
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.main-wrapper{
+    width: 100%;
+    position: relative;
+    padding-left: 290px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+.main-wrapper.active{
+    padding-left: 0;
+}
+.main-wrapper.active .navbar-toggler:not(.top-nav){
+    left: 10px;
+}
+.navbar-toggler:not(.top-nav){
+    position: fixed;
+    z-index: 2;
+    top: 5px;
+    left: 285px;
+    background-color: #fff;
+    border: 1px solid;
+    /* visibility: hidden; */
+}
+.chart{
+    margin-bottom: 7rem;
+}
+button.active{
+    background-color: #0d6efd;
+    color: #fff;
+}
+.dashboard-card{
+    min-width: 220px;
+}
+.dashboard-card .card-text{
+    font-size: 22px;
+    font-weight: 600;
+}
+.dashboard-icons{
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+.btn-toggle .dropdown-icon{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-toggle.collapsed .dropdown-icon{
+    transform: rotateZ(-90deg);
+    transform-origin: center;
+    top: 20%;
+}
+
+
+
+.btn-toggle-nav li a.active{
+    background-color: rgba(255,255,255,.15) !important;
+}
+
+code{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #d5e20c;
+    background-color: #111;
+    padding: 1rem;
+    font-size: 105%;
+    width: 100%;
+    display: block;
+}
+
+.installation{
+    position: relative;
+}
+.installation button{
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+}
+
+footer{
+    /* height: 100px;
+    position: relative;
+    left: 280px;
+    width: 80vw;
+    bottom: 0; */
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    right: 0px;
+    left: 280px;
+    background: #fefefe;
+    margin-bottom: 0px;
+    padding: 0 2rem;
+    width: 100%;
+    z-index: 1;
+}
+footer.active{
+    left: 0;
+}
+.auth-card {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.auth-card .card{
+    max-width: 500px;
+}
+
+/* custom scroll  */
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #666;
+}
+
+
+
+/* bootstrap overriding css  */
+
+.form-floating>label{
+    left: inherit;
+}
+
+.clock-timepicker{
+    width: 100%;
+}
+
+
+/* ckeditor height */
+
+.ck-editor__editable_inline {
+    min-height: 160px;
+}
+
+
+/* top nav css  */
+.top-nav-wrapper{
+  margin-top: 4.5rem;
+}
+.main-wrapper.top-nav{
+    padding-left: 0;
+}
+
+footer.top-nav{
+    left: 0;
+}
+
+
+
+/* reset fullcalender  */
+
+a.fc-daygrid-day-number,
+a.fc-col-header-cell-cushion,
+a.fc-daygrid-event
+{
+    color: inherit;
+    text-decoration: inherit;
+}
